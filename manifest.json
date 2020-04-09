@@ -1,0 +1,23 @@
+{
+    "background": {
+        "presistent": false,
+        "scripts": ["tamarywat.js"]
+    },
+    "chrome_url_overrides": {
+        "newtab": "dashboard.html"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "description": "Replace new tab page with Covid-19 Virus Tracker For Myanmar",
+    "icons": {
+        "148": "icon-148.png",
+        "128": "icon-128.png",
+        "96": "icon-96.png",
+        "48": "icon-48.png",
+        "32": "icon-32.png",
+        "16": "icon-16.png"
+     },
+    "manifest_version": 2,
+    "name": "Tamar-ywat",
+    "offline_enabled": true,
+    "version": "0.1"
+}
