@@ -1,13 +1,15 @@
 # TAMAR-YWAT
 ###  မောင်လေးရေ မင်္ဂလာပါ မောင်လေး တမာရွက်စားပေးရတယ်တဲ့၊ ကျန်တဲ့သူတွေသိ အောင်မျှ‌ဝေပေးလိုက် ပါဦး။
 
+![Screenshot](https://raw.githubusercontent.com/urony/tamar-ywat/master/Tamarywat.png)
+
 ## How to Install And Test?
 
-> git clone https://github.com/urony/tamar-ywat.git
-
-> Go to the chrome paste *chrome://extensions* and turn on developer mode
-
-> Then **click** *Load unpacked* and choose this this folder(**tamar-ywat**) when pop-up select folder window.
+1. git clone https://github.com/urony/tamar-ywat.git
+>
+2. Go to the chrome paste *chrome://extensions* and turn on developer mode
+>
+3. Then **click** *Load unpacked* and choose this this folder(**tamar-ywat**) when pop-up select folder window.
 
 ## Descriptions of Tamar-ywat
 
