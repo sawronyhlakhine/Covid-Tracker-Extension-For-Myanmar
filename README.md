@@ -9,7 +9,7 @@
 >
 2. Go to the chrome type *chrome://extensions* and turn on **developer mode**
 >
-3. Then **click** *Load unpacked* and choose this this folder(**tamar-ywat**) when pop-up select folder window.
+3. Then **click** *Load unpacked* and choose this folder(**tamar-ywat**) when pop-up select folder window.
 
 ## Descriptions of Tamar-ywat
 
