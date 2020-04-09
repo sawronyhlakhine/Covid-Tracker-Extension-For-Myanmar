@@ -7,7 +7,7 @@
 
 1. git clone https://github.com/urony/tamar-ywat.git
 >
-2. Go to the chrome paste *chrome://extensions* and turn on developer mode
+2. Go to the chrome type *chrome://extensions* and turn on **developer mode**
 >
 3. Then **click** *Load unpacked* and choose this this folder(**tamar-ywat**) when pop-up select folder window.
 
