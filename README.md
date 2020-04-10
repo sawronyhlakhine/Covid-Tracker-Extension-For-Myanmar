@@ -16,7 +16,7 @@
 - **New Tab Overrides extension** for *Chrome* and *Brave* broswers
 - Information about **COVID-19** infected people in myanmar
 - It's made by Real-time Data
-- It's has beautiful UI like my **Girl Friend**
+- It's has beautiful UI like my **Girlfriend**
 
 ## Reference
 
