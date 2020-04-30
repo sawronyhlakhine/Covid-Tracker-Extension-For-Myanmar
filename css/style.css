@@ -31,14 +31,14 @@ body{
 .covid-title {
   padding: 10px 20px 0px;
   border-radius: 25px;
-  background-color: rgba(0, 0, 0,.4);
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .covid-title > h1 {
   padding: 0px;
 }
 
-.mm-gradient {
+.title-gradient {
     background: #f7ff00;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #db36a4, #f7ff00);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #db36a4, #f7ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -54,20 +54,61 @@ body{
   background: linear-gradient(to left, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
 
+.active-cases {
+  background: #f79d00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #64f38c, #f79d00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #64f38c, #f79d00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.active-cases-2 {
+  background: #DCE35B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
 .death {
   background: #8A2387;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
 
-.recovered {
-  background: #f79d00;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #64f38c, #f79d00);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #64f38c, #f79d00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.recovered-2 {
+  background: #f857a6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
+}
+
+.recovered {
+  background: #B993D6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.card-title {
+  font-size: .8rem !important;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 7px rgba(0, 0, 0,.3);
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-label {
+  color: #f79d00;
 }
 
 a {
   text-decoration: none;
   color: white
+}
+
+a:hover {
+  color: #B993D6;
+  text-decoration: none;
 }

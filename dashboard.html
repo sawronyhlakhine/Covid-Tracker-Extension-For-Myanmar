@@ -16,21 +16,46 @@
         <div class="d-flex flex-row justify-content-center">
             <div class="d-flex flex-column align-items-center">
                 <div class="text-center covid-title">
-                    <h1 class="text-uppercase text-white">Covid-19 @ <span class="mm-gradient">Myanmar</span> 2020</h1>
+                    <!-- <h1 class="text-uppercase text-white">Covid-19 @ <span class="mm-gradient">Myanmar</span> 2020</h1> -->
+                    <h2 class="text-uppercase text-white text-bold"><span class="title-gradient">Covid19</span></h2>
                 </div>
-                <hr>
+                <div class="d-flex flex-row justify-content-between w-100">
+                    <p class="text-white small p-0 m-0 text-shadow">စိုးရိမ်အမှတ်စဥ်</p>
+                    <p class="text-white small p-0 m-0 text-shadow">အိမ်တွင်နေထိုင်ခြင်းဖြင့် ကာကွယ်ပါ</p>
+                </div>
+                <div class="d-flex flex-row justify-content-between w-100">
+                    <h4 class="text-uppercase text-white"><span class="small text-shadow">Danger Rank : </span> <span class="text-bold text-shadow">{{rank}}</span></h4>
+                    <h4 class="text-uppercase text-white"><span class="small text-shadow">Stay At </span> <span class="text-bold text-shadow">Home</span></h4>
+                </div>
                 <div class="row">
                     <div class="col">
                         <div class="card mb-3 cases" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4 d-flex flex-column align-self-center">
-                                    <img src="https://assets.website-files.com/5d9ba0eb5f6edb77992a99d0/5e62546c280007604ccbd27c_iconfinder_virus_disease_health_illness_medical_flu_corona_5859964.png" class="card-img" alt="...">
+                                    <img src="./images/cases.png" class="card-img" alt="...">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <p class="card-title text-uppercase text-white p-0 m-0">Cases</p>
-                                        <p class="card-text text-white small p-0 m-0">ပိုးတွေ့</p>
-                                        <h1 class="card-text text-right text-white" id="cases">{{cases}}</h1>
+                                        <p class="card-title text-uppercase text-white p-0 m-0 text-bold text-shadow">Cases</p>
+                                        <p class="card-text text-white small p-0 m-0 text-shadow">ပိုးတွေ့လူနာ</p>
+                                        <h1 class="card-text text-right text-white text-shadow" id="cases">{{cases}}</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card mb-3 active-cases" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 d-flex flex-column align-self-center">
+                                    <img src="./images/active-case.png" class="card-img pl-2" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-title text-uppercase p-0 m-0 text-white text-bold text-shadow">Active Cases</p>
+                                        <p class="card-text small p-0 m-0 text-white text-shadow">ကုသလူနာ</p>
+                                        <h1 class="card-text text-right text-white text-shadow" id="rank">{{active_case}}</h1>
                                     </div>
                                 </div>
                             </div>
@@ -41,13 +66,13 @@
                         <div class="card mb-3 death" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4 d-flex flex-column align-self-center">
-                                    <img src="https://assets.website-files.com/5d9ba0eb5f6edb77992a99d0/5e62546c280007604ccbd27c_iconfinder_virus_disease_health_illness_medical_flu_corona_5859964.png" class="card-img" alt="...">
+                                    <img src="./images/deaths.png" class="card-img" alt="...">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <p class="card-title text-uppercase text-white p-0 m-0">Deaths</p>
-                                        <p class="card-text text-white small p-0 m-0">ပိုးတွေ့သေဆုံးလူနာ</p>
-                                        <h1 class="card-text text-right text-white" id="deaths">{{deaths}}</h1>
+                                        <p class="card-title text-uppercase text-white p-0 m-0 text-bold text-shadow">Deaths</p>
+                                        <p class="card-text text-white small p-0 m-0 text-shadow">သေဆုံးလူနာ</p>
+                                        <h1 class="card-text text-right text-white text-shadow" id="deaths">{{deaths}}</h1>
                                     </div>
                                 </div>
                             </div>
@@ -58,46 +83,38 @@
                         <div class="card mb-3 recovered" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4 d-flex flex-column align-self-center">
-                                    <img src="https://assets.website-files.com/5d9ba0eb5f6edb77992a99d0/5e62546c280007604ccbd27c_iconfinder_virus_disease_health_illness_medical_flu_corona_5859964.png" class="card-img" alt="...">
+                                    <img src="./images/recovered.png" class="card-img" alt="...">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <p class="card-title text-uppercase text-white p-0 m-0">Recovered</p>
-                                        <p class="card-text text-white small p-0 m-0">ပိုးတွေ့သက်သာ</p>
-                                        <h1 class="card-text text-right text-white" id="recovered">{{recovered}}</h1>
+                                        <p class="card-title text-uppercase text-white p-0 m-0 text-bold text-shadow">Recovered</p>
+                                        <p class="card-text text-white small p-0 m-0 text-shadow">ပျောက်ကင်းလူနာ</p>
+                                        <h1 class="card-text text-right text-white text-shadow" id="recovered">{{recovered}}</h1>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-    
-                    <div class="col">
-                        <div class="card mb-3" style="max-width: 540px;">
-                            <div class="row no-gutters">
-                                <div class="col-md-4 d-flex flex-column align-self-center">
-                                    <img src="https://assets.website-files.com/5d9ba0eb5f6edb77992a99d0/5e62546c280007604ccbd27c_iconfinder_virus_disease_health_illness_medical_flu_corona_5859964.png" class="card-img" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <p class="card-title text-uppercase p-0 m-0">Rank</p>
-                                        <p class="card-text small p-0 m-0">စိုးရိမ်အမှတ်စဥ်</p>
 
-                                        <h1 class="card-text text-right text-warning" id="rank">{{rank}}</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="d-flex flex-row justify-content-between">
-            <p class="text-uppercase">Dev : <a href="javascript:void(0)">SAW Rony</a></p>
-            <p class="text-uppercase">Source : <a href="https://thevirustracker.com/">Virus Tracker</a></p>
-        </div>
     </div>
+
 </script>
+<div class="container">
+    <div class="d-flex flex-row justify-content-between">
+        <p class="text-uppercase text-white">
+            <span class="text-label small">Source : </span>
+            <a href="https://thevirustracker.com/">Virus Tracker</a>,&nbsp;
+            <a href="https://www.flaticon.com/">FlatIcons</a>
+        </p>
+        <p class="text-uppercase text-white">
+            <span class="text-label small">Dev By : </span>
+            <a href="javascript:void(0)">SAW Rony</a>
+        </p>
+    </div>
+</div>
 <script src="js/handlebars.js"></script>
 <script src="js/app.js"></script>
 

@@ -15,7 +15,8 @@
     App.fn = App.prototype;
 
     App.fn.setBackground = function($ele){
-        $ele.style.backgroundImage = "url('https://cdn.prod.www.spiegel.de/images/145cad44-5958-4d8f-a12b-c8ecad47af67_w948_r1.77_fpx52.84_fpy49.98.jpg')";
+        var index = Math.floor(Math.random() * Math.floor(3)) + 1;
+        $ele.style.backgroundImage = "url('./../images/tamar-ywat-bg-0" + index + ".jpg')";
         $ele.style.backgroundRepeat = "none";
         $ele.style.backgroundSize = "cover";
     }
@@ -25,12 +26,14 @@
             fetch('https://api.thevirustracker.com/free-api?countryTotal=MM')
                 .then(response => response.json())
                 .then((data) => {
+                    console.log(data);
                     var cData = data.countrydata[0];
                     var displayData = {
                         cases: cData.total_cases,
                         deaths: cData.total_deaths,
                         recovered: cData.total_recovered,
-                        rank: cData.total_danger_rank
+                        rank: cData.total_danger_rank,
+                        active_case: cData.total_active_cases
                     }
                     localStorage.covidmm = JSON.stringify(displayData);
                 })
