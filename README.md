@@ -1,7 +1,14 @@
 # TAMAR-YWAT
 ###  မောင်လေးရေ မင်္ဂလာပါ မောင်လေး တမာရွက်စားပေးရတယ်တဲ့၊ ကျန်တဲ့သူတွေသိ အောင်မျှ‌ဝေပေးလိုက် ပါဦး။
 
-![Screenshot](https://raw.githubusercontent.com/urony/tamar-ywat/master/Tamarywat.png)
+![Screenshot](https://raw.githubusercontent.com/urony/tamar-ywat/master/Tamarywat-Ss01.png)
+
+
+## New Features 
+**UI updated**
+- Active Cases of Covid Patients was added
+- 3 kinds of background images randomly change on open new tabs or refresh its tab.
+- Fixed UI responsive and unclickable links are now able to click.
 
 ## How to Install And Test?
 
