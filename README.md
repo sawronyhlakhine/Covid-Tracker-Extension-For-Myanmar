@@ -1,7 +1,7 @@
 # TAMAR-YWAT
 ###  မောင်လေးရေ မင်္ဂလာပါ မောင်လေး တမာရွက်စားပေးရတယ်တဲ့၊ ကျန်တဲ့သူတွေသိ အောင်မျှ‌ဝေပေးလိုက် ပါဦး။
 
-![Screenshot](https://raw.githubusercontent.com/urony/tamar-ywat/master/Tamarywat-Ss01.png)
+![Screenshot](https://raw.githubusercontent.com/urony/tamar-ywat/master/Tamarywat-Ss01.png=250x250)
 
 
 ## New Features 
