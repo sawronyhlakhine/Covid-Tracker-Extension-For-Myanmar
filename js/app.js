@@ -23,17 +23,17 @@
 
     App.fn.getData = function(){
         if(navigator.onLine) {
-            fetch('https://api.thevirustracker.com/free-api?countryTotal=MM')
+            fetch('https://covid-api.com/api/reports?iso=MMR')
                 .then(response => response.json())
                 .then((data) => {
-                    console.log(data);
-                    var cData = data.countrydata[0];
+                    // console.log(data.data[0]);
+                    var cData = data.data[0];
                     var displayData = {
-                        cases: cData.total_cases,
-                        deaths: cData.total_deaths,
-                        recovered: cData.total_recovered,
-                        rank: cData.total_danger_rank,
-                        active_case: cData.total_active_cases
+                        cases: cData.confirmed,
+                        deaths: cData.deaths,
+                        recovered: cData.recovered,
+                        date: this.dateConvert(cData.date),
+                        active_case: cData.active
                     }
                     localStorage.covidmm = JSON.stringify(displayData);
                 })
@@ -43,10 +43,18 @@
                 cases: '--',
                 deaths: '--',
                 recovered: '--',
-                rank: '--'
+                date: '--'
             }
             localStorage.covidmm = JSON.stringify(displayData);
         }
+    }
+
+    App.fn.dateConvert = function(date) {
+        var now = new Date(date);
+        var day = now.getDate()<10? "0"+now.getDate() : now.getDate();
+        var month = (now.getMonth()+1)<10? "0"+(now.getMonth()+1) : (now.getMonth()+1);
+        var year = ''+now.getFullYear();
+        return day+"/"+month+"/"+year;
     }
 
     App.fn.renderLoop = function() {
